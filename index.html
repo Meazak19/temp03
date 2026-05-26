@@ -14,12 +14,12 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <!-- Bs 4 -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> 
 
-<!-- Owl-Carousel -->
+<!-- Owl-Carousel --> 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"> 
 
-<!-- Animate Css -->
+<!-- Animate Css --> 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/2.1.1/animate.min.css"> 
  
 
@@ -309,8 +309,83 @@
     line-height: 1.2;
     margin-bottom: 0;
    }
-
-     
+   .page-wrapper .indulgeSection {
+    padding-bottom: 100px;
+   }
+   .page-wrapper .indulgePara {
+       padding: 50px;
+    background: #4119a0;
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 24px;
+   }
+.page-wrapper .indulgeSection .aboutContent{
+  height: 85%;
+}
+.page-wrapper .indulgeSection h2{ 
+    font-size: 70px;
+    color: #4119a0;
+}
+.page-wrapper .indulgeSection h2 span{ 
+       font-size: 75px;
+    color: #ff0101;
+    padding-top: 20px;
+    display: inline-block;
+}
+.page-wrapper .aboutImgTwo {
+    background: linear-gradient(to top, #421ea2, #c1e3ff);
+    padding: 8px;
+    border-radius: 30px;
+    height: 100%;
+}
+.page-wrapper .aboutImgTwo img{
+    border-radius: inherit;
+    height: 100%;
+    object-fit: cover;
+}
+.page-wrapper .menuHeader {
+        text-align: center;
+    font-family: "Titan One", sans-serif;
+    text-transform: capitalize;
+    font-size: 130px;
+    transform: scale(1.3);
+    -webkit-text-stroke: 2px #ffffff;
+    color: #ae8dfe;
+}
+.page-wrapper .menuSection h2 {
+         font-family: "Great Vibes", cursive;
+    text-transform: capitalize;
+    text-align: center;
+    transform: translate(-20px, -80px);
+    z-index: 2;
+    position: relative;
+    font-weight: 500;
+    color: #ff0000;
+    font-size: 100px;
+}
+.page-wrapper .menuSection {
+  padding-bottom: 100px;
+}
+.page-wrapper .galleryImg {
+  border-radius: inherit;
+    transition: all 0.2s linear;
+}
+.page-wrapper .galleryContainer {
+      background: #62567c;
+    border-radius: 50px;
+        max-width: 90%;
+    margin: auto;
+}
+.page-wrapper .galleryContainer:hover .galleryImg{
+      transform: rotate(-10deg);
+    filter: drop-shadow(-5px 5px 5px #0000007d);
+    border: 4px solid #4f719d;
+    color: #0000007d;
+    transition: all 0.2s linear;
+}
 
    @media(min-width:1200px){
           .page-wrapper .container{
@@ -326,26 +401,257 @@
       }
 
  
+@media (max-width: 1499px) {
+  .page-wrapper h1 { font-size: 100px; }
+  .page-wrapper h1 span { font-size: 95px; }
+  .page-wrapper .menuHeader { font-size: 110px; }
+  .page-wrapper .menuSection h2 { font-size: 85px; }
+  .page-wrapper .dessertHeading .spanOne { font-size: 115px; }
+  .page-wrapper .dessertHeading .spanTwo { font-size: 65px; }
+  .page-wrapper .dessertHeading .spanThree { font-size: 90px; }
+}
 
-  @media (max-width: 1499px) {
-    
+@media (max-width: 1199px) {
+  .page-wrapper h1 { font-size: 78px; }
+  .page-wrapper h1 span { font-size: 74px; }
+  .page-wrapper h2 { font-size: 48px; }
+  .page-wrapper h3 { font-size: 32px; }
+  .page-wrapper p { font-size: 21px; }
+  .page-wrapper .orderBtn { font-size: 24px; padding: 13px 20px; }
+
+  .page-wrapper .dessertHeading .spanOne { font-size: 88px; letter-spacing: 4px; padding: 20px 35px; }
+  .page-wrapper .dessertHeading .spanTwo { font-size: 53px; letter-spacing: 4px; padding: 28px 35px 20px; }
+  .page-wrapper .dessertHeading .spanThree { font-size: 74px; letter-spacing: 4px; padding: 20px 70px; }
+  .page-wrapper .dessertContainer { padding: 80px 35px; }
+  .page-wrapper .crepeImg { transform: scale(1.8); }
+
+  .page-wrapper .innerContent h2 { font-size: 44px; }
+  .page-wrapper .innerContent p { font-size: 17px; }
+
+  .page-wrapper .paymentContainer { max-width: 310px; }
+  .page-wrapper .paymentImgContainer { max-width: 200px; height: 240px; }
+
+  .page-wrapper .indulgeSection h2 { font-size: 58px; }
+  .page-wrapper .indulgeSection h2 span { font-size: 63px; }
+  .page-wrapper .indulgePara { font-size: 21px; padding: 40px; }
+
+  .page-wrapper .menuHeader { font-size: 95px; }
+  .page-wrapper .menuSection h2 { font-size: 75px; transform: translate(-18px, -70px); }
+}
+
+@media (max-width: 991px) {
+  /* ── Column overrides — prevent Bootstrap stacking ── */
+  .page-wrapper .headerSection .col-lg-7   { flex: 0 0 58.333%; max-width: 58.333%; }
+  .page-wrapper .headerSection .col-lg-5   { flex: 0 0 41.666%; max-width: 41.666%; }
+
+  .page-wrapper .aboutSection  .col-lg-4   { flex: 0 0 33.333%; max-width: 33.333%; }
+
+  .page-wrapper .serviceSection .col-lg-3  { flex: 0 0 50%;      max-width: 50%;      margin-bottom: 24px; }
+
+  .page-wrapper .dessertsSection .col-lg-8 { flex: 0 0 62%;      max-width: 62%; }
+  .page-wrapper .dessertsSection .col-lg-4 { flex: 0 0 38%;      max-width: 38%; }
+
+  .page-wrapper .paymentSection .col-lg-4  { flex: 0 0 33.333%; max-width: 33.333%; }
+
+  .page-wrapper .indulgeSection .col-lg-4:first-child   { flex: 0 0 28%; max-width: 28%; }
+  .page-wrapper .indulgeSection .col-lg-4:nth-child(2)  { flex: 0 0 44%; max-width: 44%; }
+  .page-wrapper .indulgeSection .col-lg-2               { flex: 0 0 14%; max-width: 14%; }
+
+  .page-wrapper .menuSection .col-lg-4     { flex: 0 0 33.333%; max-width: 33.333%; }
+
+  /* ── Typography ── */
+  .page-wrapper h1 { font-size: 62px; }
+  .page-wrapper h1 span { font-size: 58px; }
+  .page-wrapper h2 { font-size: 38px; }
+  .page-wrapper h3 { font-size: 26px; }
+  .page-wrapper p  { font-size: 16px; margin-bottom: 18px; }
+  .page-wrapper .orderBtn { font-size: 18px; padding: 11px 16px; border-radius: 15px; }
+
+  /* ── Desserts ── */
+  .page-wrapper .dessertHeading .spanOne   { font-size: 62px; letter-spacing: 2px; padding: 16px 24px; }
+  .page-wrapper .dessertHeading .spanTwo   { font-size: 37px; letter-spacing: 2px; padding: 22px 24px 16px; }
+  .page-wrapper .dessertHeading .spanThree { font-size: 52px; letter-spacing: 2px; padding: 16px 40px; }
+  .page-wrapper .dessertContainer { padding: 55px 22px; border-radius: 65px; box-shadow: inset 0 0 14px 16px #fff; }
+  .page-wrapper .crepeImg { transform: scale(1.6); }
+
+  /* ── Service cards ── */
+  .page-wrapper .innerContent { padding: 28px 14px; border-radius: 30px; }
+  .page-wrapper .innerContent h2 { font-size: 34px; }
+  .page-wrapper .innerContent p  { font-size: 13px; }
+
+  /* ── Payment ── */
+  .page-wrapper .paymentContainer    { max-width: 100%; padding: 30px 12px; border-radius: 28px; }
+  .page-wrapper .paymentImgContainer { max-width: 150px; height: 180px; padding: 18px; border-width: 7px; margin-bottom: 22px; border-radius: 16px; }
+  .page-wrapper .paymentContainer h2 { font-size: 26px; }
+  .page-wrapper .paymentContainer p  { font-size: 15px; }
+
+  /* ── Indulge ── */
+  .page-wrapper .indulgeSection h2       { font-size: 44px; }
+  .page-wrapper .indulgeSection h2 span  { font-size: 48px; }
+  .page-wrapper .indulgePara             { padding: 28px; font-size: 16px; border-radius: 28px; }
+  .page-wrapper .indulgeSection .aboutContent { height: auto; }
+
+  /* ── Menu ── */
+  .page-wrapper .menuHeader   { font-size: 72px; transform: scale(1.15); }
+  .page-wrapper .menuSection h2 { font-size: 56px; transform: translate(-10px, -52px); }
+  .page-wrapper .galleryContainer { border-radius: 36px; }
+
+  /* ── Section padding ── */
+  .page-wrapper .headerSection   { padding: 70px 0; }
+  .page-wrapper .aboutSection    { padding: 50px 0; }
+  .page-wrapper .serviceSection  { padding: 35px 0 70px; }
+  .page-wrapper .dessertsSection { padding: 35px 0 80px; }
+  .page-wrapper .paymentSection  { padding-bottom: 70px; }
+  .page-wrapper .indulgeSection  { padding-bottom: 70px; }
+  .page-wrapper .menuSection     { padding-bottom: 70px; }
+}
+
+@media (max-width: 767px) {
+  /* ── Column overrides ── */
+  .page-wrapper .headerSection .col-lg-7   { flex: 0 0 52%; max-width: 52%; }
+  .page-wrapper .headerSection .col-lg-5   { flex: 0 0 48%; max-width: 48%; }
+
+  .page-wrapper .aboutSection  .col-lg-4   { flex: 0 0 33.333%; max-width: 33.333%; }
+
+  .page-wrapper .serviceSection .col-lg-3  { flex: 0 0 50%; max-width: 50%; }
+
+  .page-wrapper .dessertsSection .col-lg-8 { flex: 0 0 58%; max-width: 58%; }
+  .page-wrapper .dessertsSection .col-lg-4 { flex: 0 0 42%; max-width: 42%; }
+
+  .page-wrapper .paymentSection .col-lg-4  { flex: 0 0 33.333%; max-width: 33.333%; }
+
+  .page-wrapper .indulgeSection .col-lg-4:first-child   { flex: 0 0 30%; max-width: 30%; }
+  .page-wrapper .indulgeSection .col-lg-4:nth-child(2)  { flex: 0 0 40%; max-width: 40%; }
+  .page-wrapper .indulgeSection .col-lg-2               { flex: 0 0 15%; max-width: 15%; }
+
+  .page-wrapper .menuSection .col-lg-4     { flex: 0 0 33.333%; max-width: 33.333%; }
+
+  /* ── Typography ── */
+  .page-wrapper h1 { font-size: 44px; }
+  .page-wrapper h1 span { font-size: 40px; }
+  .page-wrapper h2 { font-size: 26px; }
+  .page-wrapper h3 { font-size: 18px; }
+  .page-wrapper p  { font-size: 12px; margin-bottom: 12px; }
+  .page-wrapper .orderBtn { font-size: 12px; padding: 8px 12px; border-radius: 10px; border-width: 2px; }
+
+  /* ── Desserts ── */
+  .page-wrapper .dessertHeading .spanOne   { font-size: 38px; letter-spacing: 1px; padding: 10px 14px; }
+  .page-wrapper .dessertHeading .spanTwo   { font-size: 22px; letter-spacing: 1px; padding: 14px 14px 10px; transform: skew(0deg,-6deg) scale(1.05); }
+  .page-wrapper .dessertHeading .spanThree { font-size: 32px; letter-spacing: 1px; padding: 10px 22px; }
+  .page-wrapper .dessertContainer { padding: 30px 14px; border-radius: 40px; box-shadow: inset 0 0 10px 12px #fff; }
+  .page-wrapper .crepeImg { transform: scale(1.3); }
+
+  /* ── Service cards ── */
+  .page-wrapper .innerContent { padding: 18px 8px; border-radius: 22px; }
+  .page-wrapper .innerContent h2 { font-size: 22px; }
+  .page-wrapper .innerContent p  { font-size: 11px; line-height: 1.2; }
+  .page-wrapper .innerContent.three img { min-height: 150px; }
+
+  /* ── Payment ── */
+  .page-wrapper .paymentContainer    { padding: 18px 8px; border-radius: 20px; border-width: 4px; }
+  .page-wrapper .paymentImgContainer { max-width: 90px; height: 110px; padding: 10px; border-width: 5px; margin-bottom: 14px; border-radius: 10px; }
+  .page-wrapper .paymentContainer h2 { font-size: 18px; }
+  .page-wrapper .paymentContainer p  { font-size: 11px; }
+
+  /* ── Indulge ── */
+  .page-wrapper .indulgeSection h2       { font-size: 30px; }
+  .page-wrapper .indulgeSection h2 span  { font-size: 33px; padding-top: 10px; }
+  .page-wrapper .indulgePara             { padding: 16px 10px; font-size: 12px; border-radius: 20px; }
+  .page-wrapper .aboutImgTwo             { border-radius: 20px; }
+
+  /* ── Menu ── */
+  .page-wrapper .menuHeader   { font-size: 48px; transform: scale(1.05); }
+  .page-wrapper .menuSection h2 { font-size: 38px; transform: translate(-6px, -38px); }
+  .page-wrapper .galleryContainer { border-radius: 25px; max-width: 95%; }
+
+  /* ── Misc ── */
+  .page-wrapper .aboutContent { gap: 14px; }
+  .page-wrapper .btmLine { width: 80%; height: 8px; }
+  .page-wrapper .pl-0 { padding-left: 5px !important; }
+
+  /* ── Section padding ── */
+  .page-wrapper .headerSection   { padding: 50px 0; }
+  .page-wrapper .aboutSection    { padding: 35px 0; }
+  .page-wrapper .serviceSection  { padding: 24px 0 50px; }
+  .page-wrapper .dessertsSection { padding: 24px 0 60px; }
+  .page-wrapper .paymentSection  { padding-bottom: 50px; }
+  .page-wrapper .indulgeSection  { padding-bottom: 50px; }
+  .page-wrapper .menuSection     { padding-bottom: 50px; }
+}
+
+@media (max-width: 575px) {
+  /* ── NOW allow full stacking ── */
+  .page-wrapper .headerSection .col-lg-7,
+  .page-wrapper .headerSection .col-lg-5,
+  .page-wrapper .aboutSection  .col-lg-4,
+  .page-wrapper .serviceSection .col-lg-3,
+  .page-wrapper .dessertsSection .col-lg-8,
+  .page-wrapper .dessertsSection .col-lg-4,
+  .page-wrapper .paymentSection .col-lg-4,
+  .page-wrapper .indulgeSection .col-lg-4:first-child,
+  .page-wrapper .indulgeSection .col-lg-4:nth-child(2),
+  .page-wrapper .indulgeSection .col-lg-2,
+  .page-wrapper .menuSection .col-lg-4 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 20px;
+    padding-left: 15px !important;
   }
 
-  @media (max-width: 1199px) {
+  /* ── Typography — comfortable mobile sizes ── */
+  .page-wrapper h1 { font-size: 54px; }
+  .page-wrapper h1 span { font-size: 50px; }
+  .page-wrapper h2 { font-size: 36px; }
+  .page-wrapper h3 { font-size: 24px; }
+  .page-wrapper p  { font-size: 16px; margin-bottom: 16px; }
+  .page-wrapper .orderBtn { font-size: 18px; padding: 12px 20px; border-radius: 14px; border-width: 2px; }
 
-  }
+  /* ── Header ── */
+  .page-wrapper .headerSection { padding: 55px 0 35px; text-align: center; }
 
-  @media (max-width: 991px) {
+  /* ── Desserts ── */
+  .page-wrapper .dessertHeading .spanOne   { font-size: 52px; letter-spacing: 2px; padding: 14px 20px; }
+  .page-wrapper .dessertHeading .spanTwo   { font-size: 30px; letter-spacing: 2px; padding: 18px 20px 13px; transform: skew(0deg,-6deg) scale(1.1); }
+  .page-wrapper .dessertHeading .spanThree { font-size: 42px; letter-spacing: 2px; padding: 14px 30px; }
+  .page-wrapper .dessertContainer { padding: 40px 18px; border-radius: 36px; box-shadow: inset 0 0 12px 14px #fff; }
+  .page-wrapper .crepeImg { transform: scale(1); transform-origin: center top; }
 
-  }
+  /* ── Service cards ── */
+  .page-wrapper .innerContent { padding: 36px 20px; border-radius: 36px; }
+  .page-wrapper .innerContent h2 { font-size: 38px; }
+  .page-wrapper .innerContent p  { font-size: 18px; line-height: 1.4; }
+  .page-wrapper .innerContent.three img { min-height: 220px; }
 
-  @media (max-width: 767px) {
-    
-  }
+  /* ── Payment ── */
+  .page-wrapper .paymentContainer    { max-width: 320px; padding: 40px 22px; border-radius: 36px; border-width: 5px; }
+  .page-wrapper .paymentImgContainer { max-width: 200px; height: 240px; padding: 22px; border-width: 9px; margin-bottom: 40px; border-radius: 18px; }
+  .page-wrapper .paymentContainer h2 { font-size: 32px; }
+  .page-wrapper .paymentContainer p  { font-size: 20px; }
 
-  @media (max-width: 575px) { 
-    
-  }
+  /* ── Indulge ── */
+  .page-wrapper .indulgeSection h2       { font-size: 50px; }
+  .page-wrapper .indulgeSection h2 span  { font-size: 55px; }
+  .page-wrapper .indulgePara             { padding: 36px 22px; font-size: 18px; border-radius: 36px; }
+  .page-wrapper .aboutImgTwo             { height: 260px; border-radius: 24px; }
+  .page-wrapper .indulgeSection .aboutContent { height: auto; margin-bottom: 0; }
+
+  /* ── Menu ── */
+  .page-wrapper .menuHeader   { font-size: 70px; transform: scale(1); -webkit-text-stroke: 1px #fff; }
+  .page-wrapper .menuSection h2 { font-size: 58px; transform: translate(0, -45px); }
+  .page-wrapper .galleryContainer { border-radius: 36px; max-width: 100%; }
+
+  /* ── Misc ── */
+  .page-wrapper .btmLine { width: 60%; height: 8px; }
+  .page-wrapper .aboutContent { margin-bottom: 10px; }
+
+  /* ── Section padding ── */
+  .page-wrapper .aboutSection    { padding: 40px 0; }
+  .page-wrapper .serviceSection  { padding: 30px 0 60px; }
+  .page-wrapper .dessertsSection { padding: 30px 0 60px; }
+  .page-wrapper .paymentSection  { padding-bottom: 60px; }
+  .page-wrapper .indulgeSection  { padding-bottom: 60px; }
+  .page-wrapper .menuSection     { padding-bottom: 60px; }
+}
  
  
 
@@ -520,6 +826,86 @@
       </div>
     </div>
   </section>
+
+  <section class="indulgeSection">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="aboutContent">
+            <h2>
+              Indulge in the <span> Perfect Scoop </span>
+            </h2>
+            <div>
+              <h3>
+                Our Story
+              </h3>
+              <div class="btmLine"> </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <p class="mb-0 indulgePara">
+           Satisfy your sweet tooth from the comfort of your home with {TAKEAWAY NAME} in {TAKEAWAY TOWN}. Our freshly made desserts are perfect for any occasion-whether it's a midweek treat, a family gathering, or a late-night craving. Order now and let us bring the sweetness to you!
+          </p>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-12 pl-0">
+          <div class="aboutImgTwo">
+            <img src="https://assets.touch2success.com/static/c5da8c3b32b8cc9fc8d76de87e85ec0a/img/1743000753phpyPEkSU.jpg" class="img-fluid" alt="">
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-12 pl-0">
+           <div class="aboutImgTwo">
+            <img src="https://assets.touch2success.com/static/c5da8c3b32b8cc9fc8d76de87e85ec0a/img/1743000753phpyPEkSU.jpg" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="menuSection">
+    <div class="container">
+      <p class="menuHeader">
+        Our Menu
+      </p>
+      <h2>
+         Specialities
+      </h2>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="galleryContainer">
+            <img src="https://assets.touch2success.com/static/c5da8c3b32b8cc9fc8d76de87e85ec0a/img/1743000753phpyPEkSU.jpg" class="img-fluid galleryImg" alt="">
+            <!-- <div class="hoverContent">
+              <div>
+
+              </div>
+            </div> -->
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="galleryContainer">
+            <img src="https://assets.touch2success.com/static/c5da8c3b32b8cc9fc8d76de87e85ec0a/img/1743000753phpyPEkSU.jpg" class="img-fluid galleryImg" alt="">
+            <!-- <div class="hoverContent">
+              <div>
+
+              </div>
+            </div> -->
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="galleryContainer">
+            <img src="https://assets.touch2success.com/static/c5da8c3b32b8cc9fc8d76de87e85ec0a/img/1743000753phpyPEkSU.jpg" class="img-fluid galleryImg" alt="">
+            <!-- <div class="hoverContent">
+              <div>
+
+              </div>
+            </div> -->
+          </div>
+        </div> 
+      </div>
+    </div>
+  </section>
+
+
 </div>
 
   
