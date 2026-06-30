@@ -340,153 +340,276 @@ font-family: "Alex Brush", cursive;
         }
     }
 
+/* ============================
+   RESPONSIVE MEDIA QUERIES
+   (only font-size / width / height in px — no stacking until <576)
+   ============================ */
 
-    
-/* ── 1500px ─────────────────────────────────────────── */
-@media (max-width:1500px) {
-  .page-wrapper h1                  { font-size: 100px; }
-  .page-wrapper h1 .spanOne         { font-size: 52px; }
-  .page-wrapper h1 .spanTwo         { font-size: 72px; }
-  .page-wrapper h2,
-  .page-wrapper .menuSection h2     { font-size: 60px; }
-  .page-wrapper .footerContent h2   { font-size: 60px; }
-  .page-wrapper .footerContent h2 span { font-size: 34px; }
-  .page-wrapper p                   { font-size: 22px; }
-  .page-wrapper .orderBtn           { font-size: 24px; }
-  .page-wrapper .paymentNumber      { width: 130px; height: 130px; font-size: 80px; }
-  .page-wrapper .headerSection      { padding: 140px 0; }
-  .page-wrapper .menuSection        { padding: 140px 0; }
+/* ---------- max-width: 1500px ---------- */
+@media (max-width: 1500px) {
+  .page-wrapper p { font-size: 19px; margin-bottom: 20px; }
+
+  .page-wrapper h1 { font-size: 85px; }
+  .page-wrapper h1 .spanOne { font-size: 50px; }
+  .page-wrapper h1 .spanTwo { font-size: 70px; }
+  .page-wrapper h2 { font-size: 48px; }
+
+  .page-wrapper .headerSection { padding: 140px 0; }
+  .page-wrapper .orderBtn { font-size: 24px; padding: 9px 22px; }
+
+  .page-wrapper .headerImgOne { margin-top: 40px; transform: scale(1.15); }
+  .page-wrapper .headerImgTop { width: 240px;         transform: scaleX(3.1) scaleY(2.3) rotate(15deg) !important;
+        top: 17%;
+        left: -28%; }
+
+  .page-wrapper .menuSection { padding: 150px 0; }
+  .page-wrapper .menuSection h2 { font-size: 70px; }
+  .page-wrapper .galleryParentContainer { gap: 24px; margin: 60px 0 20px; }
+
+  .page-wrapper .paymentNumber { width: 135px; height: 135px; font-size: 90px; }
+  .page-wrapper .paymentPara { max-width: 65%; margin: 22px auto 60px; }
+
+  .page-wrapper .footerContent h2 { font-size: 48px; }
+  .page-wrapper .footerContent h2 span { font-size: 26px; }
+  .page-wrapper .footerImg img { max-height: 620px; border-radius: 40px; }
+  .page-wrapper .footerBorder { padding: 26px 22px 26px 42px; }
+.page-wrapper .paymentSection {    padding: 0px 0 75px;}
+  .page-wrapper .decorationImgOne { width: 75px; }
+  .page-wrapper .decorationImgTwo { width: 44px; }
+  .page-wrapper .footerImg img {
+        transform: scale(1.05) translateX(10px) !important;
+  }
 }
- 
-/* ── 1199px ─────────────────────────────────────────── */
-@media (max-width:1199px) {
-  .page-wrapper h1                  { font-size: 82px; }
-  .page-wrapper h1 .spanOne         { font-size: 44px; }
-  .page-wrapper h1 .spanTwo         { font-size: 60px; }
-  .page-wrapper h2,
-  .page-wrapper .menuSection h2     { font-size: 50px; }
-  .page-wrapper .footerContent h2   { font-size: 50px; }
-  .page-wrapper .footerContent h2 span { font-size: 28px; }
-  .page-wrapper p                   { font-size: 20px; }
-  .page-wrapper .orderBtn           { font-size: 20px; padding: 9px 20px; }
-  .page-wrapper .paymentNumber      { width: 110px; height: 110px; font-size: 68px; }
-  .page-wrapper .paymentContainer.center { transform: scale(1.2); }
-  .page-wrapper .galleryParentContainer { gap: 18px; }
-  .page-wrapper .headerSection      { padding: 110px 0; }
-  .page-wrapper .menuSection        { padding: 120px 0; }
-  .page-wrapper .footerSection      { padding: 80px 0; }
-  .page-wrapper .headerImgTop       { width: 220px; }
+
+/* ---------- max-width: 1199px ---------- */
+@media (max-width: 1199px) {
+  .page-wrapper p { font-size: 18px; margin-bottom: 18px; letter-spacing: 0.5px; }
+
+  .page-wrapper h1 { font-size: 78px; }
+  .page-wrapper h1 .spanOne { font-size: 42px; }
+  .page-wrapper h1 .spanTwo { font-size: 58px; }
+  .page-wrapper h2 { font-size: 40px; }
+
+  .page-wrapper .headerSection { padding: 110px 0; }
+  .page-wrapper .orderBtn { font-size: 20px; padding: 8px 20px; }
+
+  .page-wrapper .headerImgOne { margin-top: 30px; transform: scale(1.05); }
+  .page-wrapper .headerImgTop {         width: 160px;
+        left: -16%;
+        top: 10%; }
+
+  .page-wrapper .menuSection { padding: 120px 0; }
+  .page-wrapper .menuSection h2 { font-size: 50px; }
+  .page-wrapper .menuPara { max-width: 85%;     margin: 10px auto 10px;}
+  .page-wrapper .galleryParentContainer { gap: 18px; margin: 50px 0 15px; }
+
+  .page-wrapper .arrowIcon { width: 42px; height: 42px; bottom: 35px; right: 20px; }
+  .page-wrapper .arrowIcon img { width: 22px; height: 22px; }
+  .page-wrapper .hoverContent p { font-size: 15px; left: 22px; padding: 12px 9px 14px 9px; }
+
+  .page-wrapper .paymentSection {         padding: 0px 0 50px; }
+  .page-wrapper .paymentNumber { width: 115px; height: 115px; font-size: 75px; }
+  .page-wrapper .paymentHeader { font-size: 17px; padding: 5px 16px; border-width: 2px; }
+  .page-wrapper .paymentPara { max-width: 75%; margin: 20px auto 50px; }
+
+  .page-wrapper .footerSection { padding: 80px 0; }
+  .page-wrapper .footerContent h2 { font-size: 42px; }
+  .page-wrapper .footerContent h2 span { font-size: 22px; }
+  .page-wrapper .footerImg img { max-height: 520px; border-radius: 32px; }
+  .page-wrapper .footerBorder { padding: 22px 18px 22px 32px; border-width: 5px; }
+    .page-wrapper .footerContent  p { font-size: 16px;}
+  .page-wrapper .decorationImgOne { width: 62px; }
+  .page-wrapper .decorationImgTwo { width: 38px; left: 11%; }
+  .page-wrapper .menuSection::after {    top: -40px;    height: 120px;}
+  .page-wrapper .menuSection::before {bottom: -40px;height: 120px;}
 }
- 
-/* ── 991px ──────────────────────────────────────────── */
-@media (max-width:991px) {
-  .page-wrapper h1                  { font-size: 64px; }
-  .page-wrapper h1 .spanOne         { font-size: 36px; }
-  .page-wrapper h1 .spanTwo         { font-size: 48px; }
-  .page-wrapper h2,
-  .page-wrapper .menuSection h2     { font-size: 42px; }
-  .page-wrapper .footerContent h2   { font-size: 42px; }
-  .page-wrapper .footerContent h2 span { font-size: 24px; }
-  .page-wrapper p                   { font-size: 18px; }
-  .page-wrapper .orderBtn           { font-size: 18px; padding: 8px 18px; }
-  .page-wrapper .galleryParentContainer { grid-template-columns: 1fr 1fr; gap: 15px; }
-  .page-wrapper .paymentNumber      { width: 95px; height: 95px; font-size: 56px; }
-  .page-wrapper .paymentContainer.center { transform: scale(1.15); }
-  .page-wrapper .paymentPara        { max-width: 80%; }
-  .page-wrapper .headerImgTop       { width: 180px; }
-  .page-wrapper .headerSection      { padding: 90px 0; }
-  .page-wrapper .menuSection        { padding: 100px 0; }
-  .page-wrapper .footerSection      { padding: 60px 0; }
-  .page-wrapper .footerImg img      { max-height: 520px; }
-}
- 
-/* ── 767px ──────────────────────────────────────────── */
-@media (max-width:767px) {
-  .page-wrapper h1                  { font-size: 52px; }
-  .page-wrapper h1 .spanOne         { font-size: 30px; }
-  .page-wrapper h1 .spanTwo         { font-size: 40px; }
-  .page-wrapper h2,
-  .page-wrapper .menuSection h2     { font-size: 36px; }
-  .page-wrapper .footerContent h2   { font-size: 36px; }
+
+/* ---------- max-width: 991px ---------- */
+@media (max-width: 991px) {
+  .page-wrapper p { font-size: 16px; margin-bottom: 16px; line-height: 1.45; }
+
+  .page-wrapper h1 { font-size: 55px; }
+  .page-wrapper h1 .spanOne { font-size: 30px; }
+  .page-wrapper h1 .spanTwo { font-size: 40px; }
+  .page-wrapper h2 { font-size: 32px; }
+  .page-wrapper .headerContent p { max-width: 100%;}
+
+  .page-wrapper .headerSection { padding: 80px 0; }
+  .page-wrapper .orderBtn { font-size: 17px; padding: 7px 18px; border-radius: 22px; }
+
+  .page-wrapper .headerImgOne { margin-top: 20px; transform: scale(1); }
+  .page-wrapper .headerImgTop {         width: 140px;
+        transform: scaleX(2.8) scaleY(2) rotate(15deg) !important;
+        left: -22%;
+        top: 5%; }
+
+  .page-wrapper .menuSection {         padding: 100px 0;
+        margin-top: -20px; }
+  .page-wrapper .menuSection::after,
+  .page-wrapper .menuSection::before { height: 80px; top: -20px; }
+  .page-wrapper .menuSection::before { top: auto; bottom: -20px; }
+  .page-wrapper .menuSection h2 { font-size: 40px; }
+  .page-wrapper .menuPara { max-width: 92%; }
+  .page-wrapper .galleryParentContainer { gap: 14px;         margin: 25px 0 15px; }
+
+  .page-wrapper .arrowIcon { width: 34px; height: 34px; bottom: 25px; right: 14px; }
+  .page-wrapper .arrowIcon img { width: 18px; height: 18px; }
+  .page-wrapper .hoverContent p { font-size: 13px; left: 16px; padding: 10px 8px 12px 8px; }
+
+  .page-wrapper .paymentSection { padding: 0px 0 50px; }
+  .page-wrapper .paymentNumber { width: 95px; height: 95px; font-size: 60px; }
+  .page-wrapper .paymentHeader { font-size: 15px; padding: 5px 14px; margin-top: 12px; }
+  .page-wrapper .paymentPara { max-width: 85%; margin: 18px auto 60px; }
+
+  .page-wrapper .footerSection { padding: 60px 0; }
+  .page-wrapper .footerContent h2 { font-size: 37px; }
   .page-wrapper .footerContent h2 span { font-size: 20px; }
-  .page-wrapper p                   { font-size: 16px; }
-  .page-wrapper .orderBtn           { font-size: 16px; padding: 8px 16px; border-radius: 20px; }
-  .page-wrapper .paymentNumber      { width: 80px; height: 80px; font-size: 46px; }
-  .page-wrapper .paymentContainer.center { transform: scale(1.1); }
-  .page-wrapper .paymentPara        { max-width: 90%; }
-  .page-wrapper .menuPara           { max-width: 90%; }
-  .page-wrapper .galleryParentContainer { grid-template-columns: 1fr 1fr; gap: 12px; margin: 50px 0 20px; }
-  .page-wrapper .headerImgTop       { width: 150px; }
-  .page-wrapper .headerSection      { padding: 70px 0; }
-  .page-wrapper .menuSection        { padding: 80px 0; }
-  .page-wrapper .paymentSection     { padding: 20px 0 70px; }
-  .page-wrapper .footerSection      { padding: 50px 0; }
-  .page-wrapper .footerContent h2   { font-size: 32px; }
-  .page-wrapper .footerBorder       { padding: 25px 20px 25px 30px; border-width: 4px; }
-  .page-wrapper .decorationImgOne   { width: 60px; }
-  .page-wrapper .decorationImgTwo   { width: 36px; }
+  .page-wrapper .footerImg img { max-height: 420px; border-radius: 26px; }
+  .page-wrapper .footerBorder { padding: 30px 14px 30px 24px; border-width: 4px; }
+
+  .page-wrapper .decorationImgOne { width: 50px; }
+  .page-wrapper .decorationImgTwo { width: 30px; left: 13%; }
+      .page-wrapper .footerContent p {
+        font-size: 14px;
+    }
 }
- 
-/* ── 575px — stack elements ─────────────────────────── */
-@media (max-width:575px) {
-  /* Header */
-  .page-wrapper .headerSection      { padding: 50px 0 60px; }
-  .page-wrapper .col-lg-6           { flex: 0 0 100%; max-width: 100%; }
-  .page-wrapper .headerImgParent    { margin-top: 30px; }
-  .page-wrapper .headerImgOne       { transform: scale(1); }
-  .page-wrapper .headerImgTop       { width: 120px; }
-  .page-wrapper h1                  { font-size: 42px; }
-  .page-wrapper h1 .spanOne         { font-size: 24px; }
-  .page-wrapper h1 .spanTwo         { font-size: 32px; }
- 
-  /* About */
-  .page-wrapper .aboutSection .col-lg-7,
-  .page-wrapper .aboutSection .col-lg-5 { flex: 0 0 100%; max-width: 100%; }
-  .page-wrapper .aboutContent       { margin-top: 25px; }
-  .page-wrapper h2,
-  .page-wrapper .menuSection h2     { font-size: 30px; }
-  .page-wrapper .footerContent h2   { font-size: 28px; }
-  .page-wrapper .footerContent h2 span { font-size: 17px; }
- 
-  /* Menu gallery */
-  .page-wrapper .galleryParentContainer { grid-template-columns: 1fr 1fr; gap: 10px; margin: 35px 0 15px; }
- 
-  /* How it works */
-  .page-wrapper .paymentSection     { padding: 15px 0 50px; }
-  .page-wrapper .col-lg-4           { flex: 0 0 100%; max-width: 100%; margin-bottom: 30px; }
+
+/* ---------- max-width: 767px ---------- */
+@media (max-width: 767px) {
+  .page-wrapper p { font-size: 15px; margin-bottom: 14px; }
+.page-wrapper .footerImg img {
+        transform: scale(1.05) translateX(15px) !important;
+    }
+  .page-wrapper h1 { font-size: 46px; }
+  .page-wrapper h1 .spanOne { font-size: 23px; }
+  .page-wrapper h1 .spanTwo { font-size: 32px; }
+  .page-wrapper h2 { font-size: 25px; }
+  .page-wrapper .headerContent p {     margin: 0 auto 10px; }
+
+  .page-wrapper .headerSection { padding: 60px 0; }
+  .page-wrapper .orderBtn { font-size: 15px; padding: 6px 16px; border-radius: 20px; }
+
+  .page-wrapper .headerImgOne { margin-top: 15px; transform: scale(1); }
+  .page-wrapper .headerImgTop {         width: 100px;
+        transform: scaleX(2.6) scaleY(1.9) rotate(15deg) !important;
+        left: -20%;
+        top: 0%; }
+        .page-wrapper .aboutSection {    padding: 25px 0;}
+.page-wrapper .aboutImg {    top: 15px;
+    position: relative;}
+  .page-wrapper .menuSection {         padding: 100px 0;
+        margin-top: -20px; }
+  .page-wrapper .menuSection::after,
+  .page-wrapper .menuSection::before { height: 80px; top: -30px; }
+  .page-wrapper .menuSection::before { top: auto; bottom: -30px;    clip-path: ellipse(50% 80% at 50% 80%); }
+  .page-wrapper .menuSection h2 { font-size: 34px; }
+  .page-wrapper .galleryParentContainer { gap: 25px; margin: 40px 0 10px; grid-template-columns: 1fr 1fr;}
+  .page-wrapper .menuSection::after {    clip-path: ellipse(50% 75% at 50% 25%);}
+
+  .page-wrapper .arrowIcon { width: 28px; height: 28px; bottom: 18px; right: 10px; }
+  .page-wrapper .arrowIcon img { width: 14px; height: 14px; }
+  .page-wrapper .hoverContent p { font-size: 11px; left: 10px; padding: 8px 7px 10px 7px; }
+    .page-wrapper .menuPara {
+        max-width: 100%;
+    }
+  .page-wrapper .paymentSection { padding: 15px 0 50px; }
+  .page-wrapper .paymentNumber { width: 80px; height: 80px; font-size: 50px; }
+  .page-wrapper .paymentHeader { font-size: 13px; padding: 4px 12px; }
+  .page-wrapper .paymentPara { max-width: 92%; margin: 15px auto 30px; }
+
+  .page-wrapper .footerSection { padding: 50px 0; }
+  .page-wrapper .footerContent h2 { font-size: 30px; }
+  .page-wrapper .footerContent h2 span { font-size: 16px; }
+  .page-wrapper .footerImg img {         min-height: 400px;
+        border-radius: 15px; }
+  .page-wrapper .footerBorder { padding: 14px 12px 14px 18px; border-width: 4px; }
+
+  .page-wrapper .decorationImgOne { width: 42px; }
+  .page-wrapper .decorationImgTwo { width: 26px; left: 14%; }
+}
+
+/* ---------- max-width: 575px (Stack one by one) ---------- */
+@media (max-width: 575px) {
+  
+
+  .page-wrapper p { font-size: 14px; margin-bottom: 12px; letter-spacing: 0.3px; }
+
+  .page-wrapper h1 { font-size: 38px; }
+  .page-wrapper h1 .spanOne { font-size: 22px; }
+  .page-wrapper h1 .spanTwo { font-size: 28px; }
+  .page-wrapper h2 { font-size: 26px; }
+.page-wrapper .headerImgParent {
+      max-width: 350px;
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+}
+    .page-wrapper .headerImgTop {
+        width: 250px;
+        transform: scaleX(1) scaleY(1.2) rotate(0deg) !important;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 0%;
+        transform-origin: center center;
+    }
+  .page-wrapper .headerSection { padding: 40px 0 30px; }
+  .page-wrapper .headerContent p { max-width: 100%; }
+  .page-wrapper .orderBtn { font-size: 14px; padding: 6px 14px; }
+
+  .page-wrapper .headerImgOne {         margin-top: 15px;
+        margin-bottom: 15px;
+        left: 15px;
+        position: relative; } 
+
+  .page-wrapper .aboutSection { padding: 50px 0 0; }
+  .page-wrapper .aboutImg { margin-top: 50px; }
+
+  .page-wrapper .menuSection { padding: 75px 0; margin-top: -25px; }
+  .page-wrapper .menuSection::after,
+  .page-wrapper .menuSection::before { height: 60px; top: -25px; }
+  .page-wrapper .menuSection::before { top: auto; bottom: -25px; }
+  .page-wrapper .menuSection h2 { font-size: 30px; }
+  .page-wrapper .menuPara { max-width: 100%; }
+
+  /* Stack gallery items */
+  .page-wrapper .galleryParentContainer {
+            grid-template-columns: 1fr;
+        gap: 18px;
+        max-width: 350px;
+        margin: 40px auto 15px;
+  }
+  .page-wrapper .arrowIcon { width: 36px; height: 36px; bottom: 30px; right: 20px; }
+  .page-wrapper .arrowIcon img { width: 20px; height: 20px; }
+  .page-wrapper .hoverContent p { font-size: 14px; left: 20px; padding: 10px 9px 12px 9px; }
+
+  .page-wrapper .paymentSection { padding: 15px 0 0px; }
+  .page-wrapper .paymentContainer { margin-bottom: 30px; }
   .page-wrapper .paymentContainer.center { transform: scale(1); }
-  .page-wrapper .paymentNumber      { width: 90px; height: 90px; font-size: 52px; }
-  .page-wrapper .paymentPara        { max-width: 95%; font-size: 15px; }
- 
-  /* Footer */
-  .page-wrapper .footerSection      { padding: 40px 0; }
-  .page-wrapper .col-lg-7,
-  .page-wrapper .col-lg-5           { flex: 0 0 100%; max-width: 100%; }
-  .page-wrapper .footerImg img      { max-height: 300px; border-radius: 25px; }
-  .page-wrapper .footerBorder       { margin-top: 25px; padding: 20px 15px; border-width: 3px; }
-  .page-wrapper .footerContent h2   { font-size: 26px; }
- 
-  /* General */
-  .page-wrapper p                   { font-size: 15px; line-height: 1.6; }
-  .page-wrapper .orderBtn           { font-size: 15px; padding: 7px 15px; }
-  .page-wrapper .menuPara,
-  .page-wrapper .paymentPara        { max-width: 100%; }
-  .page-wrapper .menuSection        { padding: 70px 0; }
-  .page-wrapper .decorationImgOne   { width: 45px; top: 10px; left: 3%; }
-  .page-wrapper .decorationImgTwo   { width: 28px; top: 10px; left: 8%; }
-}
- 
-/* ── 375px ──────────────────────────────────────────── */
-@media (max-width:375px) {
-  .page-wrapper h1                  { font-size: 36px; }
-  .page-wrapper h1 .spanOne         { font-size: 20px; }
-  .page-wrapper h1 .spanTwo         { font-size: 28px; }
-  .page-wrapper h2,
-  .page-wrapper .menuSection h2     { font-size: 26px; }
-  .page-wrapper .galleryParentContainer { grid-template-columns: 1fr; gap: 10px; }
-  .page-wrapper .paymentNumber      { width: 80px; height: 80px; font-size: 44px; }
-  .page-wrapper p                   { font-size: 14px; }
-  .page-wrapper .orderBtn           { font-size: 14px; }
+  .page-wrapper .paymentNumber {         width: 60px;
+        height: 60px;
+        font-size: 25px; }
+  .page-wrapper .paymentHeader {         font-size: 14px;
+        padding: 5px 8px;
+        letter-spacing: 0;
+        border-width: 2px; }
+  .page-wrapper .paymentPara { max-width: 100%; margin: 12px auto 25px; }
+
+  .page-wrapper .footerSection { padding: 15px 0 40px; }
+  .page-wrapper .footerImg { margin-bottom: -15px; }
+  .page-wrapper .footerContent h2 { font-size: 28px; }
+  .page-wrapper .footerContent h2 span { font-size: 18px; }
+  .page-wrapper .footerImg img {         max-height: 100%;
+        min-height: 100%;
+        transform: unset !important;
+        border-radius: 15px; }
+  .page-wrapper .footerBorder {               max-width: 85%;
+        border-radius: 10px;
+        padding: 35px 15px 20px;
+        border-width: 3px; }
+
+  .page-wrapper .decorationImgOne { width: 34px; left: 4%; }
+  .page-wrapper .decorationImgTwo { width: 22px; left: 16%; }
 }
 
 </style>
@@ -510,7 +633,7 @@ font-family: "Alex Brush", cursive;
 
   <div class="container">
    <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="col-lg-6 col-md-6 col-sm-6">
             <div class="headerContent">
                 <h1>
                     <span class="cursive"> Authentic </span> 
@@ -525,7 +648,7 @@ font-family: "Alex Brush", cursive;
                 </a>
             </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="col-lg-6 col-md-6 col-sm-6">
             <div class="headerImgParent">
               <img src="https://public.touch2success.com/static/b1cb275a788a9c10f60a93682b1e7039/img/1782597880phpjAX57Q.png" class="img-fluid headerImgTop" alt="">
               <img src="https://public.touch2success.com/static/b1cb275a788a9c10f60a93682b1e7039/img/1782597648php5hUJUE.png" class="img-fluid headerImgOne" alt="">
@@ -538,12 +661,12 @@ font-family: "Alex Brush", cursive;
 <section class="aboutSection">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-lg-7 col-md-6 col-sm-12">
+      <div class="col-lg-7 col-md-6 col-sm-6 order-sm-1 order-2">
         <div class="aboutImg">
           <img src="https://public.touch2success.com/static/b1cb275a788a9c10f60a93682b1e7039/img/1782597648php6AoIUV.png" class="img-fluid" alt="">
         </div>
       </div>
-      <div class="col-lg-5 col-md-6 col-sm-12">
+      <div class="col-lg-5 col-md-6 col-sm-6 order-sm-2 order-1">
         <div class="aboutContent text-center">
           <h2>
             Craving <br>
@@ -602,8 +725,8 @@ font-family: "Alex Brush", cursive;
     <p class="paymentPara">
       Simply place your order, track your delivery, and dig into restaurant-style meals without the hassle.
     </p>
-    <div class="row">
-      <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="row justify-content-center">
+      <div class="col-lg-4 col-md-4 col-sm-6 col-6 order-md-1 order-sm-1 order-1">
         <div class="paymentContainer"> 
             <p class="paymentNumber">
               1
@@ -613,7 +736,7 @@ font-family: "Alex Brush", cursive;
             </p> 
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="col-lg-4 col-md-4 col-sm-6 col-6 order-md-2 order-sm-3 order-2">
         <div class="paymentContainer center"> 
             <p class="paymentNumber">
               2
@@ -623,7 +746,7 @@ font-family: "Alex Brush", cursive;
             </p> 
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="col-lg-4 col-md-4 col-sm-6 col-6 order-md-3 order-sm-2 order-3">
         <div class="paymentContainer"> 
             <p class="paymentNumber">
               3
@@ -640,19 +763,19 @@ font-family: "Alex Brush", cursive;
 <section class="footerSection">
   <div class="container">
     <div class="row align-items-center justify-content-center">
-      <div class="col-lg-7 col-md-6 col-sm-12">
+      <div class="col-lg-7 col-md-7 col-sm-6">
         <div class="footerImg">
           <img src="http://public.touch2success.com/static/b1cb275a788a9c10f60a93682b1e7039/img/1782597648phpht7ZUc.jpg" class="img-fluid" alt="">
         </div>
       </div>
-      <div class="col-lg-5 col-md-6 col-sm-12 footerBorder">
+      <div class="col-lg-5 col-md-5 col-sm-6 footerBorder">
         <div class="footerContent text-center">
           <h2>
             <span> From Our Kitchen to </span> 
             Your Table 
           </h2>
           <p>
-            A+ {TAKEAWAY NAME}, we celebrate the art of Chinese cooking in the heart of {TAKEAWAY TOWN}. Our menu is inspired by the rich culinary traditions of China, featuring a mix of bold, savoury, and aromatic flavours. Whether you're joining us for a casual meal or a special occasion, we promise a delightful experience with every bite.
+            A+ {TAKEAWAY NAME}, we celebrate the art of Chinese cooking in the heart of {TAKEAWAY TOWN}. Our menu is inspired by the rich culinary traditions of China, featuring a mix of bold, savoury, and aromatic flavours. Whether you're joining us for a casual meal or a special occasion.
           </p>
           <a class="orderBtn" href="/order-now">
             Order Now
@@ -696,154 +819,339 @@ font-family: "Alex Brush", cursive;
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
 
-
- <script> 
-
-  var $owl = $('.owl-carousel').owlCarousel({
-    loop: true,
-    margin: 20,
-    nav: false,
-    dots: false,
-    autoplay: false,
-    center: true,
-    autoplayTimeout: 4000,
-    smartSpeed: 2000,
-    responsive: {
-      0:   { items: 1 },
-      576: { items: 2, center: false },
-      768: { items: 3 },
-      992: { items: 3 }
-    }
-  });
-
-  function setActiveCard() {
-    $('.owl-carousel .owl-item .slider-wrapper').removeClass('active');
-    var $visibleItems = $('.owl-carousel .owl-item.active');
-    $visibleItems.eq(0).find('.slider-wrapper').addClass('active');
-  }
-
-  $owl.on('initialized.owl.carousel translated.owl.carousel', function () {
-    setActiveCard();
-  });
-
-  setActiveCard();
-
-  // On hover: remove active from 2nd card
-  // On mouse leave: restore active to 2nd card
-  $(document).on('mouseenter', '.owl-item .slider-wrapper', function () {
-    $('.owl-carousel .owl-item .slider-wrapper').removeClass('active');
-  });
-
-  $(document).on('mouseleave', '.owl-item .slider-wrapper', function () {
-    setActiveCard();
-  });
  
-</script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
-
-
 <script>
-gsap.registerPlugin(ScrollTrigger);
- 
-/* ── Shared ease ────────────────────────────────────── */
-const ease = "power3.out";
- 
-/* ── HEADER — hero text words cascade in ────────────── */
-gsap.from(".page-wrapper .headerContent h1 .cursive", {
-  y: 40, opacity: 0, duration: 0.9, ease, delay: 0.1
-});
-gsap.from(".page-wrapper .headerContent h1 .spanOne", {
-  y: 40, opacity: 0, duration: 0.9, ease, delay: 0.3
-});
-gsap.from(".page-wrapper .headerContent h1 .spanTwo", {
-  y: 40, opacity: 0, duration: 0.9, ease, delay: 0.5
-});
-gsap.from(".page-wrapper .headerContent p", {
-  y: 30, opacity: 0, duration: 0.8, ease, delay: 0.7
-});
-gsap.from(".page-wrapper .orderBtn", {
-  scale: 0.85, opacity: 0, duration: 0.7, ease, delay: 0.9
-});
- 
-/* Hero image drift up */
-gsap.from(".page-wrapper .headerImgOne", {
-  y: 60, opacity: 0, duration: 1.1, ease, delay: 0.4
-});
-gsap.from(".page-wrapper .headerImgTop", {
-  x: -50, opacity: 0, duration: 1, ease, delay: 0.6
-});
- 
-/* Decoration sprites */
-gsap.from(".page-wrapper .decorationImgOne, .page-wrapper .decorationImgTwo", {
-  rotate: -30, opacity: 0, duration: 1, ease, stagger: 0.15, delay: 0.2
-});
- 
-/* ── ABOUT section ──────────────────────────────────── */
-gsap.from(".page-wrapper .aboutImg", {
-  scrollTrigger: { trigger: ".page-wrapper .aboutSection", start: "top 80%" },
-  x: -70, opacity: 0, duration: 1, ease
-});
-gsap.from(".page-wrapper .aboutContent", {
-  scrollTrigger: { trigger: ".page-wrapper .aboutSection", start: "top 80%" },
-  x: 70, opacity: 0, duration: 1, ease
-});
- 
-/* ── MENU section ───────────────────────────────────── */
-gsap.from(".page-wrapper .menuSection h2", {
-  scrollTrigger: { trigger: ".page-wrapper .menuSection", start: "top 82%" },
-  y: -40, opacity: 0, duration: 0.9, ease
-});
-gsap.from(".page-wrapper .menuPara", {
-  scrollTrigger: { trigger: ".page-wrapper .menuSection", start: "top 80%" },
-  y: 30, opacity: 0, duration: 0.9, ease, delay: 0.15
-});
- 
-/* Gallery cards cascade */
-gsap.from(".page-wrapper .galleryInnerContainer", {
-  scrollTrigger: { trigger: ".page-wrapper .galleryParentContainer", start: "top 85%" },
-  y: 60, opacity: 0, duration: 0.75, ease, stagger: 0.12
-});
- 
-/* ── HOW IT WORKS ───────────────────────────────────── */
-gsap.from(".page-wrapper .paymentSection h2", {
-  scrollTrigger: { trigger: ".page-wrapper .paymentSection", start: "top 82%" },
-  y: -30, opacity: 0, duration: 0.85, ease
-});
-gsap.from(".page-wrapper .paymentPara", {
-  scrollTrigger: { trigger: ".page-wrapper .paymentSection", start: "top 80%" },
-  y: 25, opacity: 0, duration: 0.85, ease, delay: 0.1
-});
- 
-/* Numbers pop in with scale */
-gsap.from(".page-wrapper .paymentContainer", {
-  scrollTrigger: { trigger: ".page-wrapper .paymentSection .row", start: "top 85%" },
-  scale: 0.7, opacity: 0, duration: 0.8, ease, stagger: 0.18
-});
- 
-/* ── FOOTER section ─────────────────────────────────── */
-gsap.from(".page-wrapper .footerImg", {
-  scrollTrigger: { trigger: ".page-wrapper .footerSection", start: "top 82%" },
-  x: -70, opacity: 0, duration: 1.05, ease
-});
-gsap.from(".page-wrapper .footerBorder", {
-  scrollTrigger: { trigger: ".page-wrapper .footerSection", start: "top 82%" },
-  x: 70, opacity: 0, duration: 1.05, ease
-});
- 
-/* Soft floating animation on the main hero dish image */
-gsap.to(".page-wrapper .headerImgOne", {
-  y: -18,
-  duration: 2.8,
-  ease: "sine.inOut",
-  yoyo: true,
-  repeat: -1,
-  delay: 1.2
-});
-</script>
+  /* ============================================================
+   DESSERT / CHINESE TAKEAWAY
+   GSAP Scroll Animations + Initial Page Load Animations
+   ============================================================ */
+
+(function () {
+
+  /* ----------------------------------------------------
+     1. GSAP & ScrollTrigger Register
+     ---------------------------------------------------- */
+  gsap.registerPlugin(ScrollTrigger);
+
+  /* ----------------------------------------------------
+     2. INITIAL PAGE LOAD — HEADER TIMELINE
+     ---------------------------------------------------- */
+  const headerTimeline = gsap.timeline({
+    defaults: { ease: "power3.out" },
+  });
+
+  headerTimeline
+    /* Cursive "Authentic" */
+    .from(".headerContent h1 .cursive", {
+      y: 60,
+      opacity: 0,
+      duration: 1,
+    })
+    /* "Chinese Flavours" */
+    .from(
+      ".headerContent h1 .spanOne",
+      { y: 50, opacity: 0, duration: 0.8 },
+      "-=0.6"
+    )
+    /* "Made Fresh!" */
+    .from(
+      ".headerContent h1 .spanTwo",
+      { y: 50, opacity: 0, duration: 0.8 },
+      "-=0.5"
+    )
+    /* Paragraph */
+    .from(
+      ".headerContent > p",
+      { y: 40, opacity: 0, duration: 0.7 },
+      "-=0.4"
+    )
+    /* Order Now button — pop in */
+    .from(
+      ".headerContent .orderBtn",
+      {
+        scale: 0.5,
+        opacity: 0,
+        duration: 0.6,
+        ease: "back.out(2)",
+      },
+      "-=0.3"
+    )
+    /* Hero image slides in from right */
+    .from(
+      ".headerImgOne",
+      { x: 120, opacity: 0, duration: 1, ease: "power4.out" },
+      "-=0.9"
+    )
+    /* Decoration behind hero scales in */
+    .from(
+      ".headerImgTop",
+      { opacity: 0, scale: 0.5, duration: 1.2, ease: "power2.out" },
+      "-=0.8"
+    );
+
+  /* ----------------------------------------------------
+     3. DECORATION IMAGES — drop + float
+     ---------------------------------------------------- */
+  /* Drop in */
+  gsap.from(".decorationImgOne, .decorationImgTwo", {
+    y: -40,
+    opacity: 0,
+    rotation: -30,
+    duration: 1,
+    delay: 0.4,
+    stagger: 0.15,
+    ease: "back.out(2)",
+  });
+
+  /* Continuous subtle floating */
+  gsap.to(".decorationImgOne", {
+    y: 10,
+    rotation: 5,
+    duration: 3,
+    repeat: -1,
+    yoyo: true,
+    ease: "sine.inOut",
+  });
+
+  gsap.to(".decorationImgTwo", {
+    y: -10,
+    rotation: -5,
+    duration: 3.5,
+    repeat: -1,
+    yoyo: true,
+    ease: "sine.inOut",
+  });
+
+  /* ----------------------------------------------------
+     4. ABOUT SECTION — scroll-triggered
+     ---------------------------------------------------- */
+  /* About image slides in from left */
+  gsap.from(".aboutSection .aboutImg", {
+    scrollTrigger: {
+      trigger: ".aboutSection",
+      start: "top 80%",
+      toggleActions: "play none none reverse",
+    },
+    x: -120,
+    opacity: 0,
+    duration: 1.1,
+    ease: "power3.out",
+  });
+
+  /* About content slides in from right */
+  gsap.from(".aboutSection .aboutContent > *", {
+    scrollTrigger: {
+      trigger: ".aboutSection",
+      start: "top 75%",
+      toggleActions: "play none none reverse",
+    },
+    x: 100,
+    opacity: 0,
+    duration: 0.8,
+    stagger: 0.15,
+    ease: "power3.out",
+  });
+
+  /* ----------------------------------------------------
+     5. MENU SECTION — scroll-triggered
+     ---------------------------------------------------- */
+  /* Heading */
+  gsap.from(".menuSection h2", {
+    scrollTrigger: {
+      trigger: ".menuSection",
+      start: "top 80%",
+      toggleActions: "play none none reverse",
+    },
+    y: 60,
+    opacity: 0,
+    duration: 0.9,
+    ease: "power3.out",
+  });
+
+  /* Paragraph */
+  gsap.from(".menuSection .menuPara", {
+    scrollTrigger: {
+      trigger: ".menuSection",
+      start: "top 75%",
+      toggleActions: "play none none reverse",
+    },
+    y: 40,
+    opacity: 0,
+    duration: 0.8,
+    delay: 0.15,
+    ease: "power3.out",
+  });
+
+  /* Gallery cards — stagger pop */
+  gsap.from(".galleryInnerContainer", {
+    scrollTrigger: {
+      trigger: ".galleryParentContainer",
+      start: "top 85%",
+      toggleActions: "play none none reverse",
+    },
+    y: 80,
+    opacity: 0,
+    scale: 0.85,
+    duration: 0.8,
+    stagger: 0.15,
+    ease: "back.out(1.4)",
+  });
+
+  /* ----------------------------------------------------
+     6. PAYMENT / HOW IT WORKS — scroll-triggered
+     ---------------------------------------------------- */
+  /* Heading */
+  gsap.from(".paymentSection h2", {
+    scrollTrigger: {
+      trigger: ".paymentSection",
+      start: "top 80%",
+      toggleActions: "play none none reverse",
+    },
+    y: 50,
+    opacity: 0,
+    duration: 0.9,
+    ease: "power3.out",
+  });
+
+  /* Paragraph */
+  gsap.from(".paymentSection .paymentPara", {
+    scrollTrigger: {
+      trigger: ".paymentSection",
+      start: "top 75%",
+      toggleActions: "play none none reverse",
+    },
+    y: 40,
+    opacity: 0,
+    duration: 0.8,
+    delay: 0.15,
+    ease: "power3.out",
+  });
+
+  /* Payment numbers — rotate + scale in */
+  gsap.from(".paymentContainer .paymentNumber", {
+    scrollTrigger: {
+      trigger: ".paymentSection .row",
+      start: "top 80%",
+      toggleActions: "play none none reverse",
+    },
+    scale: 0,
+    rotation: -180,
+    opacity: 0,
+    duration: 0.9,
+    stagger: 0.2,
+    ease: "back.out(2)",
+  });
+
+  /* Payment headers — fade up */
+  gsap.from(".paymentContainer .paymentHeader", {
+    scrollTrigger: {
+      trigger: ".paymentSection .row",
+      start: "top 80%",
+      toggleActions: "play none none reverse",
+    },
+    y: 30,
+    opacity: 0,
+    duration: 0.6,
+    stagger: 0.2,
+    delay: 0.4,
+    ease: "power2.out",
+  });
+
+  /* ----------------------------------------------------
+     7. FOOTER SECTION — scroll-triggered
+     ---------------------------------------------------- */
+  /* Footer image from left */
+  gsap.from(".footerSection .footerImg", {
+    scrollTrigger: {
+      trigger: ".footerSection",
+      start: "top 80%",
+      toggleActions: "play none none reverse",
+    },
+    x: -120,
+    opacity: 0,
+    duration: 1.1,
+    ease: "power3.out",
+  });
+
+  /* Footer border from right */
+  gsap.from(".footerSection .footerBorder", {
+    scrollTrigger: {
+      trigger: ".footerSection",
+      start: "top 78%",
+      toggleActions: "play none none reverse",
+    },
+    x: 120,
+    opacity: 0,
+    duration: 1.1,
+    ease: "power3.out",
+  });
+
+  /* Footer content staggered fade-up */
+  gsap.from(".footerSection .footerContent > *", {
+    scrollTrigger: {
+      trigger: ".footerSection",
+      start: "top 70%",
+      toggleActions: "play none none reverse",
+    },
+    y: 40,
+    opacity: 0,
+    duration: 0.7,
+    stagger: 0.15,
+    delay: 0.3,
+    ease: "power3.out",
+  });
+
+  /* ----------------------------------------------------
+     8. PARALLAX SCRUB EFFECTS
+     ---------------------------------------------------- */
+  /* Hero image — moves down on scroll */
+  gsap.to(".headerImgOne", {
+    scrollTrigger: {
+      trigger: ".headerSection",
+      start: "top top",
+      end: "bottom top",
+      scrub: 1,
+    },
+    y: 20,
+  });
+
+  /* About image — parallax up */
+  gsap.to(".aboutSection .aboutImg img", {
+    scrollTrigger: {
+      trigger: ".aboutSection",
+      start: "top bottom",
+      end: "bottom top",
+      scrub: 1.2,
+    },
+    y: -20,
+  });
+
+  /* Footer image — parallax up */
+  gsap.to(".footerSection .footerImg img", {
+    scrollTrigger: {
+      trigger: ".footerSection",
+      start: "top bottom",
+      end: "bottom top",
+      scrub: 1.2,
+    },
+    y: -40,
+  });
+
+  /* ----------------------------------------------------
+     9. REFRESH ON WINDOW LOAD (after fonts / images)
+     ---------------------------------------------------- */
+  window.addEventListener("load", function () {
+    ScrollTrigger.refresh();
+  });
+
+})();
+
+</script> 
 
  
  
